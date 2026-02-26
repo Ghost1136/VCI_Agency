@@ -1207,35 +1207,104 @@
         }
 
         /* STAGGER */
-        .stagger>*:nth-child(1) { transition-delay: 0s; }
-        .stagger>*:nth-child(2) { transition-delay: 0.08s; }
-        .stagger>*:nth-child(3) { transition-delay: 0.16s; }
-        .stagger>*:nth-child(4) { transition-delay: 0.24s; }
-        .stagger>*:nth-child(5) { transition-delay: 0.32s; }
-        .stagger>*:nth-child(6) { transition-delay: 0.4s; }
+        .stagger>*:nth-child(1) {
+            transition-delay: 0s;
+        }
+
+        .stagger>*:nth-child(2) {
+            transition-delay: 0.08s;
+        }
+
+        .stagger>*:nth-child(3) {
+            transition-delay: 0.16s;
+        }
+
+        .stagger>*:nth-child(4) {
+            transition-delay: 0.24s;
+        }
+
+        .stagger>*:nth-child(5) {
+            transition-delay: 0.32s;
+        }
+
+        .stagger>*:nth-child(6) {
+            transition-delay: 0.4s;
+        }
 
         /* RESPONSIVE */
         @media (max-width: 992px) {
-            .hero h1 { font-size: 3rem; }
-            .vci-grid { grid-template-columns: 1fr; }
-            .bento-grid { grid-template-columns: 1fr; }
-            .bento-grid .service-card:nth-child(1) { grid-column: span 1; }
-            .process-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
-            .process-grid.cols-5 { grid-template-columns: repeat(3, 1fr); }
-            .process-header { flex-direction: column; text-align: center; }
-            .process-header .section-subtitle { margin-inline: auto; }
-            .team-grid { grid-template-columns: repeat(2, 1fr); }
-            .team-avatar { width: 120px; height: 120px; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .why-grid { grid-template-columns: repeat(2, 1fr); }
-            .blog-grid { grid-template-columns: 1fr; }
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .vci-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bento-grid .service-card:nth-child(1) {
+                grid-column: span 1;
+            }
+
+            .process-grid.cols-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid.cols-5 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .process-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .process-header .section-subtitle {
+                margin-inline: auto;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .team-avatar {
+                width: 120px;
+                height: 120px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 768px) {
-            :root { --header-height: 64px; }
-            .hero h1 { font-size: 2.2rem; }
-            .hero p { font-size: 1rem; }
-            .hamburger { display: block; }
+            :root {
+                --header-height: 64px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
             .nav-menu {
                 position: fixed;
                 top: var(--header-height);
@@ -1250,21 +1319,78 @@
                 align-items: flex-start;
                 border-top: 1px solid var(--border-color);
             }
-            .nav-menu.active { left: 0; }
-            .nav-link { font-size: 1.1rem; width: 100%; padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.03); }
-            .nav-cta { margin-left: 0; margin-top: 16px; width: 100%; text-align: center; }
-            .section-pad { padding: 70px 0; }
-            .process-grid.cols-4, .process-grid.cols-5 { grid-template-columns: 1fr; }
-            .process-section { padding: 60px 0; }
-            .projects-grid { grid-template-columns: 1fr; }
-            .hero-buttons { flex-direction: column; width: 100%; }
-            .hero-buttons .btn { width: 100%; }
-            .footer-inner { justify-content: center; text-align: center; }
-            .team-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-            .team-avatar { width: 100px; height: 100px; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-            .stat-item .stat-number { font-size: 1.8rem; }
-            .why-grid { grid-template-columns: 1fr; }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-link {
+                font-size: 1.1rem;
+                width: 100%;
+                padding: 12px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            }
+
+            .nav-cta {
+                margin-left: 0;
+                margin-top: 16px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .section-pad {
+                padding: 70px 0;
+            }
+
+            .process-grid.cols-4,
+            .process-grid.cols-5 {
+                grid-template-columns: 1fr;
+            }
+
+            .process-section {
+                padding: 60px 0;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .footer-inner {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .team-avatar {
+                width: 100px;
+                height: 100px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .stat-item .stat-number {
+                font-size: 1.8rem;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -1635,7 +1761,7 @@
         function fixUrl(u) {
             if (!u) return 'https://placehold.co/600x400/0a0f1e/00e5ff?text=Proyecto';
             if (u.includes('drive')) return `https://wsrv.nl/?url=${encodeURIComponent('https://drive.google.com/uc?export=view&id=' + u.split('/d/')[1].split('/')[0])}`;
-            if (u.includes('ui-avatars')) return u; 
+            if (u.includes('ui-avatars')) return u;
             return `https://wsrv.nl/?url=${encodeURIComponent(u)}`;
         }
 
@@ -1651,7 +1777,7 @@
         const pricingRows = [
             {
                 service: "Desarrollo Web",
-                basico: { price: "S/ 260", detail: "Web con 3 productos/servicios\nMantenimiento: S/ 26/mes" },
+                basico: { price: "S/ 260", detail: "Web con productos/servicios\nMantenimiento: S/ 26/mes" },
                 medio: { price: "S/ 365", detail: "Catálogo tipo restaurante\nMantenimiento: S/ 36.50/mes" },
                 avanzado: { price: "S/ 500", detail: "Catálogo autoadministrable\nMantenimiento: S/ 50/mes" }
             },
@@ -1680,9 +1806,9 @@
             {
                 title: "Rollitos Heladería",
                 desc: "Web con catálogo interactivo y pedidos online.",
-                image: "https://drive.google.com/file/d/1QS-naoMc4evnBRqKaAD3DNgy3TSjl_h8/view?usp=drive_link", 
+                image: "https://drive.google.com/file/d/1QS-naoMc4evnBRqKaAD3DNgy3TSjl_h8/view?usp=drive_link",
                 tags: ["Web", "Catálogo"],
-                url: "https://enchanting-centaur-ffa8b7.netlify.app/"
+                url: "https://gorgeous-kitsune-353e97.netlify.app/"
             },
             {
                 title: "FioreDiAle Florería",
@@ -2027,7 +2153,7 @@
                     }
                 });
             }, { threshold: 0.1 });
-            
+
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
             setTimeout(() => {
